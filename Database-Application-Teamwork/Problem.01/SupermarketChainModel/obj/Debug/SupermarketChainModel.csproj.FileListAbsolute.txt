@@ -1,0 +1,5 @@
+c:\users\jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\SupermarketChainModel\bin\Debug\SupermarketChainModel.dll
+c:\users\jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\SupermarketChainModel\bin\Debug\SupermarketChainModel.pdb
+c:\users\jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\SupermarketChainModel\obj\Debug\SupermarketChainModel.csprojResolveAssemblyReference.cache
+c:\users\jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\SupermarketChainModel\obj\Debug\SupermarketChainModel.dll
+c:\users\jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\SupermarketChainModel\obj\Debug\SupermarketChainModel.pdb

@@ -1,0 +1,26 @@
+C:\Users\Jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\Database-Application-Teamwork\bin\Debug\Database-Application-Teamwork.exe.config
+C:\Users\Jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\Database-Application-Teamwork\obj\Debug\Database-Application-Teamwork.exe
+C:\Users\Jinjaar-pc\documents\visual studio 2013\Projects\SupermarketChain\Database-Application-Teamwork\obj\Debug\Database-Application-Teamwork.pdb
+C:\Users\Jinjaar-pc\Documents\Visual Studio 2013\Projects\Database-Application-Teamwork\StupermarketChain\bin\Debug\Database-Application-Teamwork.exe.config
+C:\Users\Jinjaar-pc\Documents\Visual Studio 2013\Projects\Database-Application-Teamwork\StupermarketChain\obj\Debug\Database-Application-Teamwork.exe
+C:\Users\Jinjaar-pc\Documents\Visual Studio 2013\Projects\Database-Application-Teamwork\StupermarketChain\obj\Debug\Database-Application-Teamwork.pdb
+C:\Users\Jinjaar-pc\Desktop\Database-Application-Teamwork\StupermarketChain\bin\Debug\Database-Application-Teamwork.exe.config
+C:\Users\Jinjaar-pc\Desktop\Database-Application-Teamwork\StupermarketChain\obj\Debug\Database-Application-Teamwork.exe
+C:\Users\Jinjaar-pc\Desktop\Database-Application-Teamwork\StupermarketChain\obj\Debug\Database-Application-Teamwork.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\Database-Application-Teamwork.exe.config
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\obj\Debug\Database-Application-Teamwork.exe
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\obj\Debug\Database-Application-Teamwork.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\Database-Application-Teamwork.exe
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\Database-Application-Teamwork.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\EntityFramework.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\StupermarketChainContext.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\SupermarketChainModel.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\StupermarketChainContext.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\SupermarketChainModel.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\EntityFramework.xml
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChain\obj\Debug\SupermarketChain.csprojResolveAssemblyReference.cache
