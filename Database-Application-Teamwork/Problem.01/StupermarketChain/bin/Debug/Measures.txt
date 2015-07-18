@@ -1,3 +1,0 @@
-liters
-pieces
-kg
