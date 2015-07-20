@@ -7,16 +7,22 @@
 
     public interface ISupermarketsChainDbContext : IDisposable
     {
-         IDbSet<Measure> Measures { get; set; }
+        IDbSet<Expense> Expenses { get; set; }
 
-         IDbSet<Product> Products { get; set; }
-         
-         IDbSet<Vendor> Vendors { get; set; }
+        IDbSet<Measure> Measures { get; set; }
 
-         IDbSet<TEntity> Set<TEntity>() where TEntity : class;
+        IDbSet<Product> Products { get; set; }
 
-         DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : class;
+        IDbSet<Sale> Sales { get; set; }
 
-         int SaveChanges();
+        IDbSet<Supermarket> Supermarkets { get; set; }
+
+        IDbSet<Vendor> Vendors { get; set; }
+
+        IDbSet<TEntity> Set<TEntity>() where TEntity : class;
+
+        DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : class;
+
+        int SaveChanges();
     }
 }

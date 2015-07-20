@@ -5,6 +5,7 @@ namespace SupermarketChain.Data.Migrations
     using System.IO;
     using System.Linq;
     using Models;
+    using Utilities;
 
     public sealed class Configuration : DbMigrationsConfiguration<SupermarketsChainDbContext>
     {
@@ -30,7 +31,7 @@ namespace SupermarketChain.Data.Migrations
 
         private void SeedVendors(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\Georgi\Desktop\teamwork-last-repo-pattern\SupermarketChain\SampleData\Vendors.txt";
+            string path = Constants.SampleDataPath + "Vendors.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
@@ -51,7 +52,7 @@ namespace SupermarketChain.Data.Migrations
 
         private void SeedMeasures(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\Georgi\Desktop\teamwork-last-repo-pattern\SupermarketChain\SampleData\Measures.txt";
+            string path = Constants.SampleDataPath + "Measures.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
@@ -72,7 +73,7 @@ namespace SupermarketChain.Data.Migrations
 
         private void SeedProducts(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\Georgi\Desktop\teamwork-last-repo-pattern\SupermarketChain\SampleData\Products.txt";
+            string path = Constants.SampleDataPath + "Products.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 

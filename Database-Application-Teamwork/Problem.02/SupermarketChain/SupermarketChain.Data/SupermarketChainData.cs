@@ -6,6 +6,8 @@
     using SupermarketChain.Data.Repositories;
     using SupermarketChain.Data.Repositories.Contracts;
     using SupermarketChain.Models;
+    using SupermarketsChain.Data.Repositories;
+    using SupermarketsChain.Data.Repositories.Contracts;
 
     public class SupermarketsChainData : ISupermarketChainData
     {
@@ -31,7 +33,12 @@
                 return this.context;
             }
         }
-        
+
+        public IGenericRepository<Expense> Expenses
+        {
+            get { return this.GetRepository<Expense>(); }
+        }
+
         public IGenericRepository<Measure> Measures
         {
             get
@@ -56,6 +63,16 @@
             }
         }
 
+        public IGenericRepository<Supermarket> Supermarkets
+        {
+            get { return this.GetRepository<Supermarket>(); }
+        }
+
+        public ISalesRepository Sales
+        {
+            get { return (ISalesRepository)this.GetRepository<Sale>(); }
+        }
+
         public int SaveChanges()
         {
             return this.context.SaveChanges();
@@ -72,10 +89,10 @@
             {
                 var type = typeof(GenericRepository<T>);
 
-                //if (typeof(Sale).IsAssignableFrom(typeof(T)))
-                //{
-                //    type = typeof(SalesRepository);
-                //}
+                if (typeof(Sale).IsAssignableFrom(typeof(T)))
+                {
+                    type = typeof(SalesRepository);
+                }
 
                 var newRepo = Activator.CreateInstance(type, this.context);
                 this.repositories.Add(typeof(T), newRepo);

@@ -10,14 +10,14 @@
 
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private ISupermarketsChainDbContext context;
         private IDbSet<T> set;
 
         public GenericRepository(ISupermarketsChainDbContext context)
         {
-            this.context = context;
+            this.Context = context;
             this.set = context.Set<T>();
         }
+        protected ISupermarketsChainDbContext Context { get; set; }
 
         public IQueryable<T> All()
         {
@@ -29,33 +29,36 @@
             return this.All().Where(conditions);
         }
 
-        public void Add(T entity)
+        public T Add(T entity)
         {
             var entry = AttachIfDetached(entity);
             entry.State = EntityState.Added;
+            return entity;
         }
 
-        public void Update(T entity)
+        public T Update(T entity)
         {
             var entry = AttachIfDetached(entity);
             entry.State = EntityState.Modified;
+            return entity;
         }
 
-        public void Delete(T entity)
+        public T Delete(T entity)
         {
             var entry = AttachIfDetached(entity);
             entry.State = EntityState.Deleted;
+            return entity;
         }
 
         public void Detach(T entity)
         {
-            var entry = this.context.Entry(entity);
+            var entry = this.Context.Entry(entity);
             entry.State = EntityState.Detached;
         }
 
         private DbEntityEntry AttachIfDetached(T entity)
         {
-            var entry = this.context.Entry(entity);
+            var entry = this.Context.Entry(entity);
             if (entry.State == EntityState.Detached)
             {
                 this.set.Attach(entity);
