@@ -2,30 +2,14 @@
 
 public class Product
 {
-    private ICollection<Measure> measures;
-    private ICollection<Vendor> vendors;
-
-    public Product()
-    {
-        this.measures = new HashSet<Measure>();
-        this.vendors = new HashSet<Vendor>();
-    }
     public int Id { get; set; }
     public string ProductName { get; set; }
-    public double Price { get; set; }
-    public int?  VendorId { get; set; }
-    public int? MeasureId { get; set; }
+    public decimal Price { get; set; }
+    public int  VendorId { get; set; }
+    public int MeasureId { get; set; }
 
-    public virtual ICollection<Measure> Measures
-    {
-        get { return this.measures; }
-        set { this.measures = value; }
-    }
+    public virtual Vendor Vendor { get; set; }
 
-    public virtual ICollection<Vendor> Vendors
-    {
-        get { return this.vendors; }
-        set { this.vendors = value; }
-    }
+    public virtual  Measure Measure { get; set; }
 }
 

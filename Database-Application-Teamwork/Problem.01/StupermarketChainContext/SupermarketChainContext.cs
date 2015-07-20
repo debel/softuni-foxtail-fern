@@ -13,9 +13,9 @@ namespace StupermarketChainContext
             Database.SetInitializer(migration);
         }
 
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Measure> Measures { get; set; }
-        public DbSet<Vendor> Vendors { get; set; }
+        public IDbSet<Product> Products { get; set; }
+        public IDbSet<Measure> Measures { get; set; }
+        public IDbSet<Vendor> Vendors { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema("JINJAAR");

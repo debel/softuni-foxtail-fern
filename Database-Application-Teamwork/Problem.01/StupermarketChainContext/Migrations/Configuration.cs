@@ -12,6 +12,7 @@ namespace StupermarketChainContext.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            //AutomaticMigrationDataLossAllowed = true;
             ContextKey = "StupermarketChainContext.SupermarketChainContext";
         }
 
@@ -65,7 +66,7 @@ namespace StupermarketChainContext.Migrations
                 int vendorId = int.Parse(currentProductLine[0]);
                 string productName = currentProductLine[1];
                 int measureId = int.Parse(currentProductLine[2]);
-                double price = double.Parse(currentProductLine[3]);
+                decimal price = decimal.Parse(currentProductLine[3]);
                 Product procut = new Product()
                 {
                     VendorId = vendorId,
