@@ -1,3 +1,5 @@
+using StupermarketChainContext.Migrations;
+
 namespace StupermarketChainContext
 {
     using System.Data.Entity;
@@ -7,6 +9,8 @@ namespace StupermarketChainContext
         public SupermarketChainContext()
             : base("OracleDbContext")
         {
+            var migration = new MigrateDatabaseToLatestVersion<SupermarketChainContext,Configuration>();
+            Database.SetInitializer(migration);
         }
 
         public DbSet<Product> Products { get; set; }
