@@ -1,0 +1,17 @@
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\StupermarketChainContext.dll.config
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\StupermarketChainContext.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\StupermarketChainContext.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\EntityFramework.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\SupermarketChainModel.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\SupermarketChainModel.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\EntityFramework.xml
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\obj\Debug\StupermarketChainContext.csprojResolveAssemblyReference.cache
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\obj\Debug\StupermarketChainContext.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\obj\Debug\StupermarketChainContext.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\obj\Debug\StupermarketChainContext.Migrations.InitialCreate.resources
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\StupermarketChainContext\obj\Debug\StupermarketChainContext.csproj.GenerateResource.Cache

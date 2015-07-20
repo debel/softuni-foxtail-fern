@@ -3,7 +3,13 @@
 public class Product
 {
     private ICollection<Measure> measures;
-    private ICollection<Vendor> vendors; 
+    private ICollection<Vendor> vendors;
+
+    public Product()
+    {
+        this.measures = new HashSet<Measure>();
+        this.vendors = new HashSet<Vendor>();
+    }
     public int Id { get; set; }
     public string ProductName { get; set; }
     public double Price { get; set; }

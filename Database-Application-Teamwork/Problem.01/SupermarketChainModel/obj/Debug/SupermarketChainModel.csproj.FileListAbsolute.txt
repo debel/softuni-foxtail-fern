@@ -1,0 +1,5 @@
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\SupermarketChainModel\bin\Debug\SupermarketChainModel.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\SupermarketChainModel\bin\Debug\SupermarketChainModel.pdb
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\SupermarketChainModel\obj\Debug\SupermarketChainModel.csprojResolveAssemblyReference.cache
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\SupermarketChainModel\obj\Debug\SupermarketChainModel.dll
+C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\Problem.01\SupermarketChainModel\obj\Debug\SupermarketChainModel.pdb
