@@ -18,8 +18,6 @@
                 Console.WriteLine(
                     product.Name);
             }
-            
-
         }
     }
 }

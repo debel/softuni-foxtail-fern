@@ -30,7 +30,7 @@ namespace SupermarketChain.Data.Migrations
 
         private void SeedVendors(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\Problem.02\SupermarketChain\SampleData\Vendors.txt";
+            string path = @"C:\Users\Georgi\Desktop\teamwork-last-repo-pattern\SupermarketChain\SampleData\Vendors.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
@@ -51,7 +51,7 @@ namespace SupermarketChain.Data.Migrations
 
         private void SeedMeasures(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\Problem.02\SupermarketChain\SampleData\Measures.txt";
+            string path = @"C:\Users\Georgi\Desktop\teamwork-last-repo-pattern\SupermarketChain\SampleData\Measures.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
@@ -72,7 +72,7 @@ namespace SupermarketChain.Data.Migrations
 
         private void SeedProducts(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\Problem.02\SupermarketChain\SampleData\Products.txt";
+            string path = @"C:\Users\Georgi\Desktop\teamwork-last-repo-pattern\SupermarketChain\SampleData\Products.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
