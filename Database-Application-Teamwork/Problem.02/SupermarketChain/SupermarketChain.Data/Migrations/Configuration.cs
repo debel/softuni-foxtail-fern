@@ -1,12 +1,14 @@
 namespace SupermarketChain.Data.Migrations
 {
     using System.Data.Entity.Migrations;
+    using System.Globalization;
     using System.IO;
     using System.Linq;
     using Models;
 
-    public sealed class Configuration : DbMigrationsConfiguration<SupermarketChainContext>
+    public sealed class Configuration : DbMigrationsConfiguration<SupermarketsChainDbContext>
     {
+        
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
@@ -14,7 +16,7 @@ namespace SupermarketChain.Data.Migrations
             ContextKey = "SupermarketChain.Data.SupermarketChainContext";
         }
 
-        protected override void Seed(SupermarketChainContext context)
+        protected override void Seed(SupermarketsChainDbContext context)
         {
             if (context.Products.Any())
             {
@@ -26,9 +28,9 @@ namespace SupermarketChain.Data.Migrations
             SeedProducts(context);
         }
 
-        private void SeedVendors(SupermarketChainContext context)
+        private void SeedVendors(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\Georgi\Documents\Visual Studio 2013\Projects\DBApps\SupermarketChain\SampleData\Vendors.txt";
+            string path = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\Problem.02\SupermarketChain\SampleData\Vendors.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
@@ -47,9 +49,9 @@ namespace SupermarketChain.Data.Migrations
             context.SaveChanges();
         }
 
-        private void SeedMeasures(SupermarketChainContext context)
+        private void SeedMeasures(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\Georgi\Documents\Visual Studio 2013\Projects\DBApps\SupermarketChain\SampleData\Measures.txt";
+            string path = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\Problem.02\SupermarketChain\SampleData\Measures.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
@@ -68,9 +70,9 @@ namespace SupermarketChain.Data.Migrations
             context.SaveChanges();
         }
 
-        private void SeedProducts(SupermarketChainContext context)
+        private void SeedProducts(SupermarketsChainDbContext context)
         {
-            string path = @"C:\Users\Georgi\Documents\Visual Studio 2013\Projects\DBApps\SupermarketChain\SampleData\Products.txt";
+            string path = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\Problem.02\SupermarketChain\SampleData\Products.txt";
             var reader = new StreamReader(path);
             var line = reader.ReadLine();
 
