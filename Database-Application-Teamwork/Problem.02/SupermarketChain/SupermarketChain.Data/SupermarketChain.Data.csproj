@@ -60,6 +60,8 @@
     <Compile Include="Repositories\SalesRepository.cs" />
     <Compile Include="SupermarketChainData.cs" />
     <Compile Include="SupermarketChainDbContext.cs" />
+    <Compile Include="SupermarketChainMssqlData.cs" />
+    <Compile Include="SupermarketChainOracleData.cs" />
     <Compile Include="Utilities\Constants.cs" />
   </ItemGroup>
   <ItemGroup>

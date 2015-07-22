@@ -11,7 +11,7 @@
         static void Main()
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-            var dbData = new SupermarketsChainData();
+            var dbData = new SupermarketChainMssqlData();
             var products = dbData.Products.All();
             
             foreach (var product in products)

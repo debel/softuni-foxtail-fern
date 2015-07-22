@@ -9,16 +9,11 @@
     using SupermarketsChain.Data.Repositories;
     using SupermarketsChain.Data.Repositories.Contracts;
 
-    public class SupermarketsChainData : ISupermarketChainData
+    public abstract class SupermarketsChainData : ISupermarketChainData
     {
         private ISupermarketsChainDbContext context;
 
         private readonly IDictionary<Type, object> repositories;
-
-        public SupermarketsChainData()
-            : this(new SupermarketsChainDbContext())
-        {
-        }
 
         public SupermarketsChainData(ISupermarketsChainDbContext supermarketsChainDbContext)
         {
@@ -73,12 +68,12 @@
             get { return (ISalesRepository)this.GetRepository<Sale>(); }
         }
 
-        public int SaveChanges()
+        public virtual int SaveChanges()
         {
-            return this.context.SaveChanges();
+            return this.Context.SaveChanges();
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             this.Context.Dispose();
         }
