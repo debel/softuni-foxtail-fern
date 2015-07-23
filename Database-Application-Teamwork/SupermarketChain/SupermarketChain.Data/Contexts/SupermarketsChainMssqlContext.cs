@@ -8,9 +8,10 @@
     public class SupermarketsChainMssqlContext : DbContext, ISupermarketsChainDbContext
     {
         public SupermarketsChainMssqlContext()
-            : base("name=SupermarketChainContext")
+            : base("SupermarketChainContext")
         {
-            //Database.SetInitializer(new DropCreateDatabaseAlways<SupermarketsChainMssqlContext>());
+            var migrationStrategy = new MigrateDatabaseToLatestVersion<SupermarketsChainMssqlContext, MssqlConfiguration>();
+            Database.SetInitializer(migrationStrategy);
         }
 
         public IDbSet<Expense> Expenses { get; set; }

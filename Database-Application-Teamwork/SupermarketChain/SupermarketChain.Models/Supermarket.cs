@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-namespace SupermarketChain.Models
+﻿namespace SupermarketChain.Models
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     public class Supermarket

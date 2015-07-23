@@ -1,10 +1,6 @@
 ﻿namespace SupermarketChain.ConsoleClient
 {
-    using System.Collections.Generic;
-    using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
     using System.Linq;
-    using Data.Contracts;
     using Data.Data;
     using Models;
 
@@ -12,33 +8,43 @@
     {
         public static void Replicate(SupermarketChainOracleData oracleData, SupermarketChainMssqlData myssqlData)
         {
-            //var oracleVendors = oracleData.Vendors
-            //    .All()
-            //    .ToList();
-
-            //var oracleMeasures = oracleData.Measures
-            //    .All()
-            //    .ToList();
-
-            var oracleProducts = oracleData.Products
-                .All()
+            var oracleVendors = oracleData.Vendors.All()
+                .ToList();
+            var oracleMeasures = oracleData.Measures.All()
+                .ToList();
+            var oracleProducts = oracleData.Products.All()
                 .ToList();
 
-            oracleData.Dispose();
-
-            //foreach (var vendor in oracleVendors)
-            //{
-            //    myssqlData.Vendors.Add(vendor);
-            //    myssqlData.SaveChanges();
-            //}
-            //foreach (var measures in oracleMeasures)
-            //{
-            //    myssqlData.Measures.Add(measures);
-            //    myssqlData.SaveChanges();
-            //}
-            foreach (var products in oracleProducts)
+            foreach (var oracleVendor in oracleVendors)
             {
-                myssqlData.Products.Add(products);
+                var a = new Vendor
+                {
+                    Name = oracleVendor.Name
+                };
+                myssqlData.Vendors.Add(a);
+                myssqlData.SaveChanges();
+            }
+
+            foreach (var oracleMeasure in oracleMeasures)
+            {
+                var a = new Measure
+                {
+                    Name = oracleMeasure.Name
+                };
+                myssqlData.Measures.Add(a);
+                myssqlData.SaveChanges();
+            }
+
+            foreach (var oracleProduct in oracleProducts)
+            {
+                var a = new Product
+                {
+                    Name = oracleProduct.Name,
+                    MeasureId = myssqlData.Measures.All().FirstOrDefault(m => m.Name == oracleProduct.Measure.Name).Id,
+                    Price = oracleProduct.Price,
+                    VendorId = myssqlData.Vendors.All().FirstOrDefault(m => m.Name == oracleProduct.Vendor.Name).Id
+                };
+                myssqlData.Products.Add(a);
                 myssqlData.SaveChanges();
             }
         }

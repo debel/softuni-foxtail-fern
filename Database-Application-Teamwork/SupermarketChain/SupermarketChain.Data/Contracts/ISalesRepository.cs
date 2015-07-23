@@ -2,7 +2,7 @@
 {
     using System;
     using System.Linq;
-    using SupermarketChain.Models;
+    using Models;
 
     public interface ISalesRepository : IGenericRepository<Sale>
     {

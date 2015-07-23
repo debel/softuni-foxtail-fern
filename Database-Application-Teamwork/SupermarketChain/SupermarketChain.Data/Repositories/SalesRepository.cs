@@ -1,10 +1,9 @@
-﻿namespace SupermarketsChain.Data.Repositories
+﻿namespace SupermarketChain.Data.Repositories
 {
     using System;
     using System.Linq;
-    using SupermarketChain.Data.Contracts;
-    using SupermarketChain.Data.Repositories;
-    using SupermarketChain.Models;
+    using Contracts;
+    using Models;
 
     public class SalesRepository : GenericRepository<Sale>, ISalesRepository
     {

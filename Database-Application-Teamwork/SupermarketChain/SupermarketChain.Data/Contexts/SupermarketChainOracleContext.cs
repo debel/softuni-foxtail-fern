@@ -10,7 +10,7 @@
         public SupermarketChainOracleContext() 
             : base("OracleDbContext")
         {
-            var migration = new MigrateDatabaseToLatestVersion<SupermarketChainOracleContext,OracleConfiguration>();
+            var migration = new MigrateDatabaseToLatestVersion<SupermarketChainOracleContext, OracleConfiguration>();
             Database.SetInitializer(migration);
         }
         public IDbSet<Expense> Expenses { get; set; }
@@ -36,9 +36,7 @@
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("ROSI");
-
-            // ...
+            modelBuilder.HasDefaultSchema("QWE");
         }
     }
 }
