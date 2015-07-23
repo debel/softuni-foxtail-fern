@@ -2,6 +2,7 @@
 {
     using System.Data.Entity;
     using Contracts;
+    using Migrations;
     using Models;
 
     public class SupermarketsChainMssqlContext : DbContext, ISupermarketsChainDbContext
@@ -9,7 +10,7 @@
         public SupermarketsChainMssqlContext()
             : base("name=SupermarketChainContext")
         {
-            
+            //Database.SetInitializer(new DropCreateDatabaseAlways<SupermarketsChainMssqlContext>());
         }
 
         public IDbSet<Expense> Expenses { get; set; }

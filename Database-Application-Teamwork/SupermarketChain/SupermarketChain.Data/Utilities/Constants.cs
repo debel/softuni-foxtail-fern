@@ -2,6 +2,6 @@
 {
     public static class Constants
     {
-        public const string SampleDataPath = @"C:\Users\Jinjaar-pc\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\SupermarketChain\SampleData\";
+        public const string SampleDataPath = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\SupermarketChain\SampleData\";
     }
 }

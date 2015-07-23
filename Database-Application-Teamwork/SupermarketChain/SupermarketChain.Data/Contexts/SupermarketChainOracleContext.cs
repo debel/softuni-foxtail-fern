@@ -5,7 +5,7 @@
     using Migrations;
     using Models;
 
-    class SupermarketChainOracleContext : DbContext, ISupermarketsChainDbContext
+    public class SupermarketChainOracleContext : DbContext, ISupermarketsChainDbContext
     {
         public SupermarketChainOracleContext() 
             : base("OracleDbContext")
@@ -36,7 +36,7 @@
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("JINJAAR");
+            modelBuilder.HasDefaultSchema("ROSI");
 
             // ...
         }

@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReplicateData.cs" />
     <Compile Include="SupermarketChainMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

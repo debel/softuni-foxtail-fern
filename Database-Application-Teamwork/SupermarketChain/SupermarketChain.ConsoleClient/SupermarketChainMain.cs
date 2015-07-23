@@ -12,14 +12,7 @@
         static void Main()
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-            var dbData = new SupermarketChainMssqlData();
-            var products = dbData.Products.All();
-
-            foreach (var product in products)
-            {
-                Console.WriteLine(
-                    product.Name);
-            }
+            
             var oracleData = new SupermarketChainOracleData();
             var oracleProducts = oracleData.Products.All();
 
@@ -28,6 +21,19 @@
                 Console.WriteLine(
                     product.Name);
             }
+
+            var myssqlData = new SupermarketChainMssqlData();
+            var products = myssqlData.Products.All();
+
+            foreach (var product in products)
+            {
+                Console.WriteLine(
+                    product.Name);
+            }
+
+            //ReplicateData.Replicate(oracleData, myssqlData);
+
+            
         }
     }
 }

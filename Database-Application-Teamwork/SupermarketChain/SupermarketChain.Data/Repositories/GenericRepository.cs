@@ -1,12 +1,14 @@
 ﻿namespace SupermarketChain.Data.Repositories
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     using System.Linq;
     using System.Linq.Expressions;
+    using System.Runtime.CompilerServices;
+    using Data;
     using SupermarketChain.Data.Contracts;
-    using SupermarketChain.Data.Repositories.Contracts;
 
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

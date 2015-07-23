@@ -5,9 +5,7 @@
     using Contracts;
     using Models;
     using Repositories;
-    using Repositories.Contracts;
     using SupermarketsChain.Data.Repositories;
-    using SupermarketsChain.Data.Repositories.Contracts;
 
     public abstract class SupermarketsChainData : ISupermarketChainData
     {

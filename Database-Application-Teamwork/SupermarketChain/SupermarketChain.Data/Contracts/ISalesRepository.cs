@@ -1,8 +1,7 @@
-﻿namespace SupermarketsChain.Data.Repositories.Contracts
+﻿namespace SupermarketChain.Data.Contracts
 {
     using System;
     using System.Linq;
-    using SupermarketChain.Data.Repositories.Contracts;
     using SupermarketChain.Models;
 
     public interface ISalesRepository : IGenericRepository<Sale>

@@ -5,7 +5,6 @@
     using SupermarketChain.Data.Contracts;
     using SupermarketChain.Data.Repositories;
     using SupermarketChain.Models;
-    using SupermarketsChain.Data.Repositories.Contracts;
 
     public class SalesRepository : GenericRepository<Sale>, ISalesRepository
     {

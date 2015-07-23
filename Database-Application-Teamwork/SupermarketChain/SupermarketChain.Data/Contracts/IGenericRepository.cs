@@ -1,8 +1,10 @@
-﻿namespace SupermarketChain.Data.Repositories.Contracts
+﻿namespace SupermarketChain.Data.Contracts
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Linq.Expressions;
+    using Data;
 
     public interface IGenericRepository<T> where T : class
     {
