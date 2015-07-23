@@ -2,16 +2,14 @@
 {
     using System.Data.Entity;
     using SupermarketChain.Data.Contracts;
-    using SupermarketChain.Data.Migrations;
     using SupermarketChain.Models;
 
-    public class SupermarketsChainDbContext : DbContext, ISupermarketsChainDbContext
+    public class SupermarketsChainMssqlContext : DbContext, ISupermarketsChainDbContext
     {
-        public SupermarketsChainDbContext()
+        public SupermarketsChainMssqlContext()
             : base("name=SupermarketChainContext")
         {
-            var migrationStrategy = new MigrateDatabaseToLatestVersion<SupermarketsChainDbContext, Configuration>();
-            Database.SetInitializer(migrationStrategy);
+            
         }
 
         public IDbSet<Expense> Expenses { get; set; }

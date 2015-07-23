@@ -64,13 +64,14 @@
     <Compile Include="Contracts\ISalesRepository.cs" />
     <Compile Include="Contracts\ISupermarketChainData.cs" />
     <Compile Include="Contracts\ISupermarketsChainDbContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\MssqlConfiguration.cs" />
+    <Compile Include="Migrations\OracleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Contracts\IGenericRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\SalesRepository.cs" />
     <Compile Include="SupermarketChainData.cs" />
-    <Compile Include="SupermarketChainDbContext.cs" />
+    <Compile Include="SupermarketsChainMssqlContext.cs" />
     <Compile Include="SupermarketChainMssqlData.cs" />
     <Compile Include="SupermarketChainOracleContext.cs" />
     <Compile Include="SupermarketChainOracleData.cs" />

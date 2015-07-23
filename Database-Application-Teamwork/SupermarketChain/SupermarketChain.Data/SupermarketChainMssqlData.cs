@@ -3,7 +3,7 @@
     public class SupermarketChainMssqlData : SupermarketsChainData
     {
         public SupermarketChainMssqlData()
-            : base(new SupermarketsChainDbContext())
+            : base(new SupermarketsChainMssqlContext())
         {
         }
     }

@@ -8,6 +8,7 @@ namespace SupermarketChain.Data
 {
     using System.Data.Entity;
     using Contracts;
+    using Migrations;
     using Models;
 
     class SupermarketChainOracleContext : DbContext, ISupermarketsChainDbContext
@@ -15,7 +16,8 @@ namespace SupermarketChain.Data
         public SupermarketChainOracleContext() 
             : base("OracleDbContext")
         {
-            
+            var migration = new MigrateDatabaseToLatestVersion<SupermarketChainOracleContext,OracleConfiguration>();
+            Database.SetInitializer(migration);
         }
         public IDbSet<Expense> Expenses { get; set; }
 

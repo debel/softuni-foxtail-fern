@@ -1,23 +1,22 @@
 namespace SupermarketChain.Data.Migrations
 {
+    using System;
+    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Globalization;
     using System.IO;
     using System.Linq;
     using Models;
     using Utilities;
 
-    public sealed class Configuration : DbMigrationsConfiguration<SupermarketsChainDbContext>
+    internal sealed class OracleConfiguration : DbMigrationsConfiguration<SupermarketChainOracleContext>
     {
-        
-        public Configuration()
+        public OracleConfiguration()
         {
             AutomaticMigrationsEnabled = true;
-            //AutomaticMigrationDataLossAllowed = true;
-            ContextKey = "SupermarketChain.Data.SupermarketChainContext";
+            ContextKey = "OracleDbContext";
         }
 
-        protected override void Seed(SupermarketsChainDbContext context)
+        protected override void Seed(SupermarketChainOracleContext context)
         {
             if (context.Products.Any())
             {
@@ -29,7 +28,7 @@ namespace SupermarketChain.Data.Migrations
             SeedProducts(context);
         }
 
-        private void SeedVendors(SupermarketsChainDbContext context)
+        private void SeedVendors(SupermarketChainOracleContext context)
         {
             string path = Constants.SampleDataPath + "Vendors.txt";
             var reader = new StreamReader(path);
@@ -50,7 +49,7 @@ namespace SupermarketChain.Data.Migrations
             context.SaveChanges();
         }
 
-        private void SeedMeasures(SupermarketsChainDbContext context)
+        private void SeedMeasures(SupermarketChainOracleContext context)
         {
             string path = Constants.SampleDataPath + "Measures.txt";
             var reader = new StreamReader(path);
@@ -71,7 +70,7 @@ namespace SupermarketChain.Data.Migrations
             context.SaveChanges();
         }
 
-        private void SeedProducts(SupermarketsChainDbContext context)
+        private void SeedProducts(SupermarketChainOracleContext context)
         {
             string path = Constants.SampleDataPath + "Products.txt";
             var reader = new StreamReader(path);
