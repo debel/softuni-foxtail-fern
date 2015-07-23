@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Threading;
     using Data;
+    using Data.Data;
 
     public class SupermarketChainMain
     {

@@ -5,7 +5,7 @@
     using System.Data.Entity.Infrastructure;
     using System.Linq;
     using System.Linq.Expressions;
-    using Data.Contracts;
+    using SupermarketChain.Data.Contracts;
     using SupermarketChain.Data.Repositories.Contracts;
 
     public class GenericRepository<T> : IGenericRepository<T> where T : class

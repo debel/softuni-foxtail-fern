@@ -5,6 +5,7 @@ namespace SupermarketChain.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.IO;
     using System.Linq;
+    using Contexts;
     using Models;
     using Utilities;
 

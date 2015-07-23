@@ -1,11 +1,11 @@
-﻿namespace SupermarketChain.Data
+﻿namespace SupermarketChain.Data.Data
 {
     using System;
     using System.Collections.Generic;
-    using SupermarketChain.Data.Contracts;
-    using SupermarketChain.Data.Repositories;
-    using SupermarketChain.Data.Repositories.Contracts;
-    using SupermarketChain.Models;
+    using Contracts;
+    using Models;
+    using Repositories;
+    using Repositories.Contracts;
     using SupermarketsChain.Data.Repositories;
     using SupermarketsChain.Data.Repositories.Contracts;
 

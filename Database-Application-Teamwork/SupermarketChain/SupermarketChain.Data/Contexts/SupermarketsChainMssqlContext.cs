@@ -1,8 +1,8 @@
-﻿namespace SupermarketChain.Data
+﻿namespace SupermarketChain.Data.Contexts
 {
     using System.Data.Entity;
-    using SupermarketChain.Data.Contracts;
-    using SupermarketChain.Models;
+    using Contracts;
+    using Models;
 
     public class SupermarketsChainMssqlContext : DbContext, ISupermarketsChainDbContext
     {

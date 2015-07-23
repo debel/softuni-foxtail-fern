@@ -4,6 +4,7 @@ namespace SupermarketChain.Data.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using Contexts;
 
     internal sealed class MssqlConfiguration : DbMigrationsConfiguration<SupermarketsChainMssqlContext>
     {
