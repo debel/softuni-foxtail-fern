@@ -13,7 +13,18 @@
     {
         static void Main(string[] args)
         {
-            ExportDataToPdf(new DateTime(2010, 02, 19), new DateTime(2015, 10, 09));
+            Console.WriteLine("Enter startDate and endDate separated by whitespace.");
+            string input = Console.ReadLine();
+            try
+            {
+                string[] dates = input.Split(' ');
+                ExportDataToPdf(DateTime.Parse(dates[0]), DateTime.Parse(dates[1]));
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Invalid input.");
+            }
+            
         }
 
         private static void ExportDataToPdf(DateTime startDate, DateTime endDate)
@@ -58,6 +69,7 @@
 
             var salesQuery = myssqlData.Sales
                     .All()
+                    .Where(s => s.SoldDate >= startDate && s.SoldDate <= endDate)
                     .Select(
                         s => new
                         {
