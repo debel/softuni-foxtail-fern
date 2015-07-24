@@ -1,8 +1,11 @@
 ﻿namespace SupermarketChain.ConsoleClient
 {
+    using System;
     using System.Globalization;
+    using System.Linq;
     using System.Threading;
     using Data.Data;
+    using _05.ExportToJSON;
 
     public class SupermarketChainMain
     {
@@ -14,7 +17,9 @@
 
             var myssqlData = new SupermarketChainMssqlData();
 
-            ReplicateData.Replicate(oracleData, myssqlData);
+            Console.WriteLine(myssqlData.Products.All().Count());
+
+            //ReplicateData.Replicate(oracleData, myssqlData);
         }
     }
 }

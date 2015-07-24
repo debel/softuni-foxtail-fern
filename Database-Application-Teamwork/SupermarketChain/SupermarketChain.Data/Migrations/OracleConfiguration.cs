@@ -7,7 +7,7 @@ namespace SupermarketChain.Data.Migrations
     using Models;
     using Utilities;
 
-    internal sealed class OracleConfiguration : DbMigrationsConfiguration<SupermarketChainOracleContext>
+    public sealed class OracleConfiguration : DbMigrationsConfiguration<SupermarketChainOracleContext>
     {
         public OracleConfiguration()
         {

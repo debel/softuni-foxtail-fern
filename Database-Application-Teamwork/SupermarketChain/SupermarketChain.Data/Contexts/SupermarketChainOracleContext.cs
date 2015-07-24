@@ -11,6 +11,7 @@
             : base("OracleDbContext")
         {
             var migration = new MigrateDatabaseToLatestVersion<SupermarketChainOracleContext, OracleConfiguration>();
+            //var migration = new DropCreateDatabaseAlways<SupermarketChainOracleContext>();
             Database.SetInitializer(migration);
         }
         public IDbSet<Expense> Expenses { get; set; }
@@ -36,7 +37,10 @@
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("QWE");
+            modelBuilder.HasDefaultSchema("ROSI");
+            modelBuilder.Ignore<Expense>();
+            modelBuilder.Ignore<Supermarket>();
+            modelBuilder.Ignore<Sale>();
         }
     }
 }
