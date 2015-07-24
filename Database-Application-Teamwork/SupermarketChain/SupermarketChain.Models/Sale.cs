@@ -2,11 +2,14 @@
 
 namespace SupermarketChain.Models
 {
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public class Sale
     {
+        private Product product;
         public Sale()
         {
-            this.SaleCost = this.PricePerUnit * this.Quantity;
+            this.SaleCost = this.product.Price * this.Quantity;
         }
 
         public int Id { get; set; }
@@ -15,15 +18,24 @@ namespace SupermarketChain.Models
 
         public int Quantity { get; set; }
 
-        public decimal PricePerUnit { get; set; }
-
-        public decimal SaleCost { get; set; }
+        [NotMapped]
+        public decimal SaleCost { get; private set; }
 
         public virtual Supermarket Supermarket { get; set; }
 
         public int SupermarketId { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual Product Product
+        {
+            get
+            {
+                return this.product;
+            }
+            set
+            {
+                this.product = value;
+            }
+        }
 
         public int ProductId { get; set; }
     }

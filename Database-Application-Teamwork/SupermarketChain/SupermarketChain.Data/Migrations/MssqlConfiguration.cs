@@ -7,7 +7,8 @@ namespace SupermarketChain.Data.Migrations
     {
         public MssqlConfiguration()
         {
-            AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationDataLossAllowed = true;
             ContextKey = "SupermarketChainContext";
         }
 
