@@ -7,19 +7,12 @@ namespace SupermarketChain.Models
     public class Sale
     {
         private Product product;
-        public Sale()
-        {
-            this.SaleCost = this.product.Price * this.Quantity;
-        }
 
         public int Id { get; set; }
 
         public DateTime SoldDate { get; set; }
 
         public int Quantity { get; set; }
-
-        [NotMapped]
-        public decimal SaleCost { get; private set; }
 
         public virtual Supermarket Supermarket { get; set; }
 

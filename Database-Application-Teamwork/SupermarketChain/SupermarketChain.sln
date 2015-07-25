@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketChain.ConsoleCli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. ExportToJSON", "05. ExportToJSON\05. ExportToJSON.csproj", "{76EF1287-783C-4372-A222-91819F338077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ExportToPdf", "03. ExportToPdf\03. ExportToPdf.csproj", "{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{76EF1287-783C-4372-A222-91819F338077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76EF1287-783C-4372-A222-91819F338077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76EF1287-783C-4372-A222-91819F338077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
