@@ -30,6 +30,8 @@
 
             Console.WriteLine(salesQuery.Count);
 
+            oracleData.Products.All().Count();
+
             //ReplicateData.Replicate(oracleData, myssqlData);
         }
     }

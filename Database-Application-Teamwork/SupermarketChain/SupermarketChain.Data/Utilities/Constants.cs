@@ -7,5 +7,6 @@
         public const string MongoDbDatabaseHost = "mongodb://localhost:27017";
         public const string MongoDbDatabaseName = "SupermarketChain";
         public const string PdfReportPath = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\SupermarketChain\03. ExportToPdf\PdfReport\";
+        public const string SalesImportPath = @"C:\Users\user\Desktop\softuni-foxtail-fern.git\trunk\Database-Application-Teamwork\SupermarketChain\02. ZipManager\Import\Sample-Sales-Reports.zip";
     }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. ExportToJSON", "05. Exp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ExportToPdf", "03. ExportToPdf\03. ExportToPdf.csproj", "{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ZipManager", "02. ZipManager\02. ZipManager.csproj", "{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
