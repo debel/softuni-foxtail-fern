@@ -17,11 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ZipManager", "02. ZipMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. LoadExpenseDataFromXml", "06. LoadExpenseDataFromXml\06. LoadExpenseDataFromXml.csproj", "{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. ExportFromSQLiteAndMySQLtoExcel", "08. ExportFromSQLiteAndMySQLtoExcel\08. ExportFromSQLiteAndMySQLtoExcel.csproj", "{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. GenerateXmlReports", "04. GenerateXmlReports\04. GenerateXmlReports.csproj", "{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}"
->>>>>>> fc439a0fde57e036a3db272b582197d7951c7f2c
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,17 +53,11 @@ Global
 		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
+
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> fc439a0fde57e036a3db272b582197d7951c7f2c
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
