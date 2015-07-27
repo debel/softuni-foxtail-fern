@@ -31,8 +31,10 @@
             Console.WriteLine(salesQuery.Count);
 
             oracleData.Products.All().Count();
+            
+            var mysqlData = new SupermarketChainMySqlData();
 
-            //ReplicateData.Replicate(oracleData, myssqlData);
+            ReplicateData.Replicate(oracleData, mysqlData);
         }
     }
 }

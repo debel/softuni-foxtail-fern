@@ -6,7 +6,7 @@
 
     public static class ReplicateData
     {
-        public static void Replicate(SupermarketChainOracleData oracleData, SupermarketChainMssqlData myssqlData)
+        public static void Replicate(SupermarketChainOracleData oracleData, SupermarketChainMySqlData myssqlData)
         {
             var oracleVendors = oracleData.Vendors.All()
                 .ToList();
