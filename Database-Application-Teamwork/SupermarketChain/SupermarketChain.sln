@@ -9,16 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketChain.Data", "Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketChain.ConsoleClient", "SupermarketChain.ConsoleClient\SupermarketChain.ConsoleClient.csproj", "{B0DB8579-94B8-4C13-AA94-B722F8E7885A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. ExportToJSON", "05. ExportToJSON\05. ExportToJSON.csproj", "{76EF1287-783C-4372-A222-91819F338077}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ExportToPdf", "03. ExportToPdf\03. ExportToPdf.csproj", "{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ZipManager", "02. ZipManager\02. ZipManager.csproj", "{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. LoadExpenseDataFromXml", "06. LoadExpenseDataFromXml\06. LoadExpenseDataFromXml.csproj", "{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. GenerateXmlReports", "04. GenerateXmlReports\04. GenerateXmlReports.csproj", "{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. ExportFromSQLiteAndMySQLtoExcel", "08. ExportFromSQLiteAndMySQLtoExcel\08. ExportFromSQLiteAndMySQLtoExcel.csproj", "{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketChain.Engine", "SupermarketChain.Engine\SupermarketChain.Engine.csproj", "{4CF255BF-4234-49F0-8A40-A83AFA441422}"
@@ -41,26 +31,6 @@ Global
 		{B0DB8579-94B8-4C13-AA94-B722F8E7885A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0DB8579-94B8-4C13-AA94-B722F8E7885A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0DB8579-94B8-4C13-AA94-B722F8E7885A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76EF1287-783C-4372-A222-91819F338077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76EF1287-783C-4372-A222-91819F338077}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76EF1287-783C-4372-A222-91819F338077}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76EF1287-783C-4372-A222-91819F338077}.Release|Any CPU.Build.0 = Release|Any CPU
-		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{955A2D07-9118-446E-AE5A-AA0EAE57C7BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD3664E6-883A-43D2-BCF6-9AA1F3A20901}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9A2BA90-ED76-46A6-9B59-E876FCBEDF87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA1EB1FF-DC5B-4C62-9C10-02E81438506A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9729CAFB-D7BF-49E9-BAD9-EC9090DF473D}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -68,8 +68,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ReplicateData.cs" />
-    <Compile Include="ReplicateMySqlData.cs" />
     <Compile Include="SupermarketChainMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -80,10 +78,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\05. ExportToJSON\05. ExportToJSON.csproj">
-      <Project>{76ef1287-783c-4372-a222-91819f338077}</Project>
-      <Name>05. ExportToJSON</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SupermarketChain.Data\SupermarketChain.Data.csproj">
       <Project>{cd89c8d9-420c-4168-9b45-c1e04bb84ea1}</Project>
       <Name>SupermarketChain.Data</Name>
