@@ -4,8 +4,8 @@
     using System.Globalization;
     using System.Linq;
     using System.Xml.Linq;
-    using SupermarketChain.Data.Contexts;
-    using SupermarketChain.Models;
+    using Data.Contexts;
+    using Models;
 
     public class XmlManager
     {

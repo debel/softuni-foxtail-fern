@@ -66,8 +66,13 @@
 
                 using (TransactionScope tran = new TransactionScope())
                 {
-                    this.SqlMarketContext.Supermarkets.Add(new Supermarket(){Name = supermarketName});
-                    this.SqlMarketContext.SaveChanges();
+                    var checkIfSupermarketExists =
+                        SqlMarketContext.Supermarkets.FirstOrDefault(p => p.Name == supermarketName);
+                    if (checkIfSupermarketExists == null)
+                    {
+                        this.SqlMarketContext.Supermarkets.Add(new Supermarket() { Name = supermarketName });
+                        this.SqlMarketContext.SaveChanges();
+                    }
                     tran.Complete();
                 }
 
@@ -77,7 +82,7 @@
                 if (supermarket != null)
                 {
                     var productsImported = this.ParseRowsData(reportDate, sheet, supermarket.Id);
-                    Console.WriteLine("{0}/{1} sales imported.\n", productsImported, sheet.Rows.Count - 4);                    
+                    Console.WriteLine("{0}/{1} sales imported.\n", productsImported, sheet.Rows.Count - 4);
                 }
 
             }

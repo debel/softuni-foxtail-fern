@@ -79,50 +79,70 @@
         public static void TransferDataFromOracleToMssql()
         {
             var oracleData = new SupermarketChainOracleData();
-            oracleData.Products.All().Count();
             var mssqlData = new SupermarketChainMssqlData();
 
-            Console.WriteLine("Data trasfer...");
-            var oracleVendors = oracleData.Vendors.All()
-                .ToList();
-            var oracleMeasures = oracleData.Measures.All()
-                .ToList();
-            var oracleProducts = oracleData.Products.All()
-                .ToList();
+            int productsAdded = 0;
+            int measuresAdded = 0;
+            int vendorsAdded = 0;
+
+            Console.WriteLine("Data transfer...");
+            var oracleVendors = oracleData.Vendors.All().ToList();
+            var oracleMeasures = oracleData.Measures.All().ToList();
+            var oracleProducts = oracleData.Products.All().ToList();
 
             foreach (var oracleVendor in oracleVendors)
             {
-                var a = new Vendor
+                var checkIfVendorExists = mssqlData.Vendors.SearchFor(p => p.Name == oracleVendor.Name).FirstOrDefault();
+                if (checkIfVendorExists == null)
                 {
-                    Name = oracleVendor.Name
-                };
-                mssqlData.Vendors.Add(a);
-                mssqlData.SaveChanges();
+                    mssqlData.Vendors.Add(
+                        new Vendor
+                        {
+                            Name = oracleVendor.Name
+                        });
+                    mssqlData.SaveChanges();
+                    vendorsAdded++;
+                }
             }
+            Console.WriteLine(vendorsAdded + " from " + oracleVendors.Count + " products added.");
+            Console.WriteLine(oracleVendors.Count - vendorsAdded + " vendors already exist in the database.");
 
             foreach (var oracleMeasure in oracleMeasures)
             {
-                var a = new Measure
+                var checkIfMeasureExists = mssqlData.Measures.SearchFor(p => p.Name == oracleMeasure.Name).FirstOrDefault();
+                if (checkIfMeasureExists == null)
                 {
-                    Name = oracleMeasure.Name
-                };
-                mssqlData.Measures.Add(a);
-                mssqlData.SaveChanges();
+                    mssqlData.Measures.Add(
+                        new Measure
+                        {
+                            Name = oracleMeasure.Name
+                        });
+                    mssqlData.SaveChanges();
+                    measuresAdded++;
+                }
             }
+            Console.WriteLine(measuresAdded + " from " + oracleMeasures.Count + " products added.");
+            Console.WriteLine(oracleMeasures.Count - measuresAdded + " measures already exist in the database.");
 
             foreach (var oracleProduct in oracleProducts)
             {
-                var a = new Product
+                var checkIfProductExists = mssqlData.Products.SearchFor(p => p.Name == oracleProduct.Name).FirstOrDefault();
+                if (checkIfProductExists == null)
                 {
-                    Name = oracleProduct.Name,
-                    MeasureId = mssqlData.Measures.All().FirstOrDefault(m => m.Name == oracleProduct.Measure.Name).Id,
-                    Price = oracleProduct.Price,
-                    VendorId = mssqlData.Vendors.All().FirstOrDefault(m => m.Name == oracleProduct.Vendor.Name).Id
-                };
-                mssqlData.Products.Add(a);
-                mssqlData.SaveChanges();
+                    mssqlData.Products.Add(
+                        new Product
+                        {
+                            Name = oracleProduct.Name,
+                            MeasureId = mssqlData.Measures.All().FirstOrDefault(m => m.Name == oracleProduct.Measure.Name).Id,
+                            Price = oracleProduct.Price,
+                            VendorId = mssqlData.Vendors.All().FirstOrDefault(m => m.Name == oracleProduct.Vendor.Name).Id
+                        });
+                    mssqlData.SaveChanges();
+                    productsAdded++;
+                }
             }
-            Console.WriteLine("Data is transferred to MSSQL");
+            Console.WriteLine(productsAdded + " from " + oracleProducts.Count + " products added.");
+            Console.WriteLine(oracleProducts.Count - productsAdded + " products already exist in the database.");
         }
 
         public static void TransferFromMssqlToMysql()
