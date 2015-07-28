@@ -25,6 +25,7 @@
         public IDbSet<Supermarket> Supermarkets { get; set; }
 
         public IDbSet<Vendor> Vendors { get; set; }
+        public IDbSet<Income> Incomes { get; set; }
 
         public new IDbSet<TEntity> Set<TEntity>() where TEntity : class
         {
@@ -41,6 +42,7 @@
             modelBuilder.Ignore<Expense>();
             modelBuilder.Ignore<Supermarket>();
             modelBuilder.Ignore<Sale>();
+            modelBuilder.Ignore<Income>();
         }
     }
 }

@@ -10,8 +10,8 @@
         public SupermarketsChainMssqlContext()
             : base("SupermarketChainContext")
         {
-            var migrationStrategy = new MigrateDatabaseToLatestVersion<SupermarketsChainMssqlContext, MssqlConfiguration>();
-            Database.SetInitializer(migrationStrategy);
+            //var migrationStrategy = new MigrateDatabaseToLatestVersion<SupermarketsChainMssqlContext, MssqlConfiguration>();
+            //Database.SetInitializer(migrationStrategy);
         }
 
         public IDbSet<Expense> Expenses { get; set; }
@@ -26,6 +26,7 @@
 
         public IDbSet<Vendor> Vendors { get; set; }
 
+        public IDbSet<Income> Incomes { get; set; }
         public new IDbSet<TEntity> Set<TEntity>() where TEntity : class
         {
             return base.Set<TEntity>();

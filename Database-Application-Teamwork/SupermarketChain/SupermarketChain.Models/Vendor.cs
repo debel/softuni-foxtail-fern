@@ -6,7 +6,7 @@
     public class Vendor
     {
         private ICollection<Product> products;
-        private ICollection<Expense> expenses; 
+        private ICollection<Expense> expenses;
 
         public Vendor()
         {

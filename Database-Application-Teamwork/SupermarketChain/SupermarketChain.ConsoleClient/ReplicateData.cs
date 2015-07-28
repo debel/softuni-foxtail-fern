@@ -6,7 +6,7 @@
 
     public static class ReplicateData
     {
-        public static void Replicate(SupermarketChainOracleData oracleData, SupermarketChainMySqlData myssqlData)
+        public static void Replicate(SupermarketChainOracleData oracleData, SupermarketChainMssqlData mssqlData)
         {
             var oracleVendors = oracleData.Vendors.All()
                 .ToList();
@@ -21,8 +21,8 @@
                 {
                     Name = oracleVendor.Name
                 };
-                myssqlData.Vendors.Add(a);
-                myssqlData.SaveChanges();
+                mssqlData.Vendors.Add(a);
+                mssqlData.SaveChanges();
             }
 
             foreach (var oracleMeasure in oracleMeasures)
@@ -31,8 +31,8 @@
                 {
                     Name = oracleMeasure.Name
                 };
-                myssqlData.Measures.Add(a);
-                myssqlData.SaveChanges();
+                mssqlData.Measures.Add(a);
+                mssqlData.SaveChanges();
             }
 
             foreach (var oracleProduct in oracleProducts)
@@ -40,12 +40,12 @@
                 var a = new Product
                 {
                     Name = oracleProduct.Name,
-                    MeasureId = myssqlData.Measures.All().FirstOrDefault(m => m.Name == oracleProduct.Measure.Name).Id,
+                    MeasureId = mssqlData.Measures.All().FirstOrDefault(m => m.Name == oracleProduct.Measure.Name).Id,
                     Price = oracleProduct.Price,
-                    VendorId = myssqlData.Vendors.All().FirstOrDefault(m => m.Name == oracleProduct.Vendor.Name).Id
+                    VendorId = mssqlData.Vendors.All().FirstOrDefault(m => m.Name == oracleProduct.Vendor.Name).Id
                 };
-                myssqlData.Products.Add(a);
-                myssqlData.SaveChanges();
+                mssqlData.Products.Add(a);
+                mssqlData.SaveChanges();
             }
         }
     }

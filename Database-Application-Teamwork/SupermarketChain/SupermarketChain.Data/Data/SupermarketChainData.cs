@@ -54,7 +54,13 @@
                 return this.GetRepository<Vendor>();
             }
         }
-
+        public IGenericRepository<Income> Incomes
+        {
+            get
+            {
+                return this.GetRepository<Income>();
+            }
+        }
         public IGenericRepository<Supermarket> Supermarkets
         {
             get { return this.GetRepository<Supermarket>(); }

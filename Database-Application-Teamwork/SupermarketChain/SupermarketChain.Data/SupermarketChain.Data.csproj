@@ -76,6 +76,7 @@
     <Compile Include="Data\SupermarketChainMySqlData.cs" />
     <Compile Include="Migrations\MySqlConfiguration.cs" />
     <Compile Include="Migrations\MssqlConfiguration.cs" />
+    <Compile Include="Migrations\MySqlHistoryContext.cs" />
     <Compile Include="Migrations\OracleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Contracts\IGenericRepository.cs" />

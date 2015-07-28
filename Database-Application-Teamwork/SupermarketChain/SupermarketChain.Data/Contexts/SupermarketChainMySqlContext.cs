@@ -14,8 +14,8 @@ namespace SupermarketChain.Data.Contexts
         public SupermarketChainMySqlContext()
             : base("MyContext")
         {
-           var migration  = new MigrateDatabaseToLatestVersion<SupermarketChainMySqlContext,MySqlConfiguration>();
-            ////var migration = new DropCreateDatabaseAlways<SupermarketChainMySqlContext>();
+           //var migration  = new MigrateDatabaseToLatestVersion<SupermarketChainMySqlContext,MySqlConfiguration>();
+            //var migration = new DropCreateDatabaseAlways<SupermarketChainMySqlContext>();
             //Database.SetInitializer(migration);
         }
         public IDbSet<Expense> Expenses { get; set; }
@@ -29,6 +29,7 @@ namespace SupermarketChain.Data.Contexts
         public IDbSet<Supermarket> Supermarkets { get; set; }
 
         public IDbSet<Vendor> Vendors { get; set; }
+        public IDbSet<Income> Incomes { get; set; }
 
         public new IDbSet<TEntity> Set<TEntity>() where TEntity : class
         {

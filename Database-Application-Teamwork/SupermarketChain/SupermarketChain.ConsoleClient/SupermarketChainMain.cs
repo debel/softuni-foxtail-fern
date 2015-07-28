@@ -15,8 +15,8 @@
 
             var oracleData = new SupermarketChainOracleData();
 
-            var myssqlData = new SupermarketChainMssqlData();
-            var salesQuery = myssqlData.Sales
+            var mssqlData = new SupermarketChainMssqlData();
+            var salesQuery = mssqlData.Sales
                     .All()
                     .Select(
                         s => new
@@ -34,7 +34,9 @@
             
             var mysqlData = new SupermarketChainMySqlData();
 
-            ReplicateData.Replicate(oracleData, mysqlData);
+           // ReplicateData.Replicate(oracleData, myssqlData);
+            ReplicateMySqlData.Replicate(mysqlData, mssqlData);
+
         }
     }
 }
