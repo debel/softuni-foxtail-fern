@@ -38,7 +38,7 @@
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("JINJAAR");
+            modelBuilder.HasDefaultSchema("ROSI");
             modelBuilder.Ignore<Expense>();
             modelBuilder.Ignore<Supermarket>();
             modelBuilder.Ignore<Sale>();

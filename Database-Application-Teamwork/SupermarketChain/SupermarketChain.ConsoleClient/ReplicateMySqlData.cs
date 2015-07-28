@@ -12,7 +12,7 @@ namespace SupermarketChain.ConsoleClient
 
     class ReplicateMySqlData
     {
-        public static void Replicate(SupermarketChainMySqlData mySqlData, SupermarketChainMssqlData mssqlData)
+        public static void TransferFromMssqlToMysql(SupermarketChainMySqlData mySqlData, SupermarketChainMssqlData mssqlData)
         {
             var mySqlVendors = mssqlData.Vendors.All().ToList();
             var mySqlMeasure = mssqlData.Measures.All().ToList();

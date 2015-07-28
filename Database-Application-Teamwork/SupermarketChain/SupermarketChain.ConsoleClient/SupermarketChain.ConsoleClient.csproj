@@ -88,6 +88,10 @@
       <Project>{cd89c8d9-420c-4168-9b45-c1e04bb84ea1}</Project>
       <Name>SupermarketChain.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SupermarketChain.Engine\SupermarketChain.Engine.csproj">
+      <Project>{4CF255BF-4234-49F0-8A40-A83AFA441422}</Project>
+      <Name>SupermarketChain.Engine</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SupermarketChain.Models\SupermarketChain.Models.csproj">
       <Project>{647ebe5c-aab4-42e3-894f-cd3dc1245eb4}</Project>
       <Name>SupermarketChain.Models</Name>

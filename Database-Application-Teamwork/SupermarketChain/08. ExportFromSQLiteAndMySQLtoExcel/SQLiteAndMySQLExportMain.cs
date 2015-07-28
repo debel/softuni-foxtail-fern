@@ -8,7 +8,7 @@
     {
         static void Main(string[] args)
         {
-            
+            GetDataFromSQLite();
         }
 
         private static void GetDataFromSQLite()
