@@ -44,6 +44,8 @@ namespace SupermarketChain.Data.Contexts
         {
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 

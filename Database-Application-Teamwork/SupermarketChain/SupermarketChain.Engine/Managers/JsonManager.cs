@@ -65,9 +65,9 @@
 
                     SaveDataInMongoDb(productJson);
 
-                    if (!File.Exists(Constants.jsonReportPath + sale.productId + ".json"))
+                    if (!File.Exists(Constants.ReportPath + sale.productId + ".json"))
                     {
-                        File.WriteAllText(Constants.jsonReportPath + sale.productId + ".json", productJson);
+                        File.WriteAllText(Constants.ReportPath + sale.productId + ".json", productJson);
                     }
                 }
             }

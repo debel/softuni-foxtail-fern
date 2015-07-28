@@ -18,7 +18,7 @@
             var document = new Document(PageSize.A4, 50, 50, 10, 10);
 
             // Create a new PdfWriter object, specifying the output stream
-            var output = File.Create(Constants.PdfReportPath + "PdfReport.pdf");
+            var output = File.Create(Constants.ReportPath + "PdfReport.pdf");
             var writer = PdfWriter.GetInstance(document, output);
 
             // Open the Document for writing

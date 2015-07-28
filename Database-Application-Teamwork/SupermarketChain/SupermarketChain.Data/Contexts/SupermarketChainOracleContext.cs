@@ -4,6 +4,7 @@
     using Contracts;
     using Migrations;
     using Models;
+    using Utilities;
 
     public class SupermarketChainOracleContext : DbContext, ISupermarketsChainDbContext
     {
@@ -38,11 +39,13 @@
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("ROSI");
+            modelBuilder.HasDefaultSchema(Constants.OracleUser);
             modelBuilder.Ignore<Expense>();
             modelBuilder.Ignore<Supermarket>();
             modelBuilder.Ignore<Sale>();
             modelBuilder.Ignore<Income>();
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
