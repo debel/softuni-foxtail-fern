@@ -1,6 +1,7 @@
 namespace SupermarketChain.Data.Migrations
 {
     using System.Data.Entity.Migrations;
+    using System.Globalization;
     using System.IO;
     using System.Linq;
     using Contexts;
@@ -11,8 +12,8 @@ namespace SupermarketChain.Data.Migrations
     {
         public OracleConfiguration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "OracleDbContext";
+            AutomaticMigrationsEnabled = false;
+            MigrationsDirectory = @"Migrations";
         }
 
         protected override void Seed(SupermarketChainOracleContext context)
@@ -81,7 +82,7 @@ namespace SupermarketChain.Data.Migrations
                 int vendorId = int.Parse(currentProductLine[0]);
                 string productName = currentProductLine[1];
                 int measureId = int.Parse(currentProductLine[2]);
-                decimal price = decimal.Parse(currentProductLine[3]);
+                decimal price = decimal.Parse(currentProductLine[3], CultureInfo.InvariantCulture);
                 Product product = new Product()
                 {
                     Name = productName,

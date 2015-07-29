@@ -2,8 +2,8 @@
 {
     public static class Constants
     {
-        public const string ReportPath = @"C:\Users\Georgi\Desktop\lastttt\SupermarketChain\Reports\";
-        private const string ImportPath = @"C:\Users\Georgi\Desktop\lastttt\SupermarketChain\Imports\";
+        public const string ReportPath = @"C:\Users\user\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\SupermarketChain\Reports\";
+        private const string ImportPath = @"C:\Users\user\Desktop\softuni-foxtail-fern\Database-Application-Teamwork\SupermarketChain\Imports\";
 
         public const string XmlReportsPath = ReportPath + "Sales-by-Vendors-Report.xml";
 

@@ -47,6 +47,8 @@
 
         private static void PrintMenu()
         {
+            Console.WriteLine("To create and seed Oracle database execute the following command in the Package Manager Console:");
+            Console.WriteLine("Update-Database -configuration:SupermarketChain.Data.Migrations.OracleConfiguration -Verbose");
             Console.WriteLine("Menu:");
             Console.WriteLine("Choose 1: To transfer data from Oracle to MSSQL");
             Console.WriteLine("Choose 2: To transfer data from Zip and Excel to MSSQL");

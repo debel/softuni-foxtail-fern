@@ -74,6 +74,10 @@
     <Compile Include="Contracts\ISupermarketChainData.cs" />
     <Compile Include="Contracts\ISupermarketsChainDbContext.cs" />
     <Compile Include="Data\SupermarketChainMySqlData.cs" />
+    <Compile Include="Migrations\201507291349390_InitialDatabaseCreation.cs" />
+    <Compile Include="Migrations\201507291349390_InitialDatabaseCreation.Designer.cs">
+      <DependentUpon>201507291349390_InitialDatabaseCreation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\MySqlConfiguration.cs" />
     <Compile Include="Migrations\MssqlConfiguration.cs" />
     <Compile Include="Migrations\MySqlHistoryContext.cs" />
@@ -98,6 +102,11 @@
       <Project>{647ebe5c-aab4-42e3-894f-cd3dc1245eb4}</Project>
       <Name>SupermarketChain.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201507291349390_InitialDatabaseCreation.resx">
+      <DependentUpon>201507291349390_InitialDatabaseCreation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
